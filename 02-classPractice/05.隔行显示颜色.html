@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<ul>
+			<li>一个div</li>
+			<li>一个div</li>
+			<li>一个div</li>
+			<li>一个div</li>
+			<li>一个div</li>
+			<li>一个div</li>
+			<li>一个div</li>
+		
+		</ul>
+	</body>
+	<script>
+		var aLi=document.getElementsByTagName('li');
+		for(var i=0;i<aLi.length;i++){
+			if(i%2==0){
+				aLi[i].style.backgroundColor='pink';
+			}else{
+				aLi[i].style.backgroundColor='hotpink';
+			}
+		}
+	</script>
+</html>

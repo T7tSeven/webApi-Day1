@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+	</head>
+
+	<body>
+		<input type="button" value="点击" /><br />
+		<img src="images/a.jpg" width="300"/>
+	</body>
+	<script type="text/javascript">
+		var isTrue = true;
+		var aImg = document.getElementsByTagName('img');
+		var aTyp = document.getElementsByTagName('input');
+		
+		aTyp[0].onclick = function() {
+			//value值改變的做法
+//			if(aTyp[0].value == "显示美女2") {
+//				aTyp[0].value = "显示美女1";
+//				aImg[0].src = '../img/b.jpg';
+//			} else {
+//				aTyp[0].value = "显示美女2";
+//				aImg[0].src = '../img/a.jpg';
+//			}
+	
+		if(isTrue){
+			aImg[0].src="images/a.jpg";
+		}else{
+			aImg[0].src="images/b.jpg";
+		}
+		isTrue = !isTrue;
+
+		}
+	</script>
+
+</html>

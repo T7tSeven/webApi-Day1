@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<style>
+		 #dd {
+			height: 25px;
+			line-height: 25px;
+			width: 170px;
+			text-align: center;
+			border: 1px solid red;
+			font-size: 12px;
+			position: relative;
+			left: 50px;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div>
+	<input type="checkbox"  /><span id="pas">保存密码</span>
+	</div>
+	<div id="dd">请不要在网吧等公共区域勾选</div>
+	<script>
+		
+		var oDd = document.getElementById('dd');
+		var oPas = document.getElementById('pas');
+		oPas.onmouseover = function(){
+			oDd.style.display = 'block';
+		}
+		oPas.onmouseout = function(){
+			oDd.style.display = 'none';
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div {
+				background-color: red;
+				height: 100px;
+				width: 100px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<input type="button" value="显示" />
+		<input type="button" value="隐藏" />
+		<div></div>
+		<script type="text/javascript">
+			var aInp = document.getElementsByTagName('input');
+			var oBox = document.getElementsByTagName('div');
+			//当按钮被单击时执行  函数包含要做的动作
+			aInp[0].onclick = function() {
+				oBox[0].style.display = 'block';
+			}
+			aInp[1].onclick = function() {
+				oBox[0].style.display = 'none';
+			}
+		</script>
+	</body>
+
+</html>
